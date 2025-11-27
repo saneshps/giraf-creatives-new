@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "u710565998_girafcreatives";
-$password = "fuy~S[2-wo]h";
-$database = "u710565998_girafcreatives";
+$username = "root";
+$password = "";
+$database = "bigleapt_cms";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
