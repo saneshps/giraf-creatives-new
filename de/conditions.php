@@ -77,8 +77,7 @@
     </style>
 
     <!-- CookieConsent -->
-    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="EN"
-        data-gcm-version="2.0" type="text/javascript">
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/35eaccce22fb0d051cda9731c9be6e07.js">
     </script>
     <!-- CookieConsent -->
 
