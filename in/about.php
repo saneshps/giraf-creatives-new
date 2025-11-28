@@ -66,6 +66,12 @@
     <!-- blogs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'> -->
+
+    <!-- CookieConsent -->
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/35eaccce22fb0d051cda9731c9be6e07.js">
+    </script>
+    <!-- CookieConsent -->
+
     <!-- blogs -->
     <?php include("gtag_head.php"); ?>
 </head>

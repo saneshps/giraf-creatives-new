@@ -78,6 +78,11 @@ $result = $conn->query($sql);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- fancy box -->
 
+    <!-- CookieConsent -->
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/35eaccce22fb0d051cda9731c9be6e07.js">
+    </script>
+    <!-- CookieConsent -->
+
     <?php include("gtag_head.php"); ?>
 </head>
 
