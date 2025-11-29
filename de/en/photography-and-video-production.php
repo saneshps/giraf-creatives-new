@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Giraf provides Professional photography and video  services in Germany, specializing in high-quality visuals for branding, marketing, events, and promotions">
-    <title>Professional Photography & Videography Company ,Germany|Giraf </title>
+        content="Get high-quality product explanatory videos in Germany. We create engaging visuals that simplify complex ideas and boost conversions. Book a call with GIRAF Creatives.">
+    <title> Product Explanatory Video Service in Germany | GIRAF Creatives </title>
     <!-- canonical -->
     <link href="https://girafcreatives.com/de/en/photography-and-video-production.php" rel="canonical">
     <!--// canonical -->
@@ -289,23 +289,17 @@ Looking for a smarter way to explain your product? Then you have come to the rig
 
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="photography-sub-title">
-                        <h4> Precision </h4>
-                        <p> Video and photography productions should never be inconsistent,
-                            editing, and cutting, which enhances its attributes must be as sharp as a katana,
-                            and emphasize stories and ideas to the targeted audience with fidelity.
-                        </p>
+                        <h4> Storytelling Engineered for Attention </h4>
+                        <p> Our videos blend narrative flow with product clarity, ensuring viewers stay engaged from the
+                            first second to the last. </p>
                     </div>
                 </div>
 
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="photography-sub-title">
-                        <h4> Enhance your Identity </h4>
-                        <p> Images and videos are the best medium since their inception to cultivate a
-                            seed in minds with a lasting impression. Corporate photography services harness this core
-                            idea.
-                            With GIRAF, you can cruise through the competitors while reaping benefits and reaching your
-                            targets within your aspired time limits.
-                        </p>
+                        <h4> Consistent Brand Tone & Visual Identity </h4>
+                        <p> From color palettes to typography and motion style, your explainer video will look and feel
+                            like a natural extension of your brand. </p>
                     </div>
                 </div>
 
