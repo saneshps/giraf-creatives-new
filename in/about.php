@@ -789,20 +789,7 @@
                     </div>
                     <!-- team -->
 
-                    <!-- team -->
-                    <div class="col-xl-3 col-lg-4 col-md-4">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="./img/team/Mubasheer.jpg" alt="Mubasheer">
 
-                            </div>
-                            <div class="team-content">
-                                <h3 class="title"> Mubashir C </h3>
-                                <span class="post"> SEO Analyst </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- team -->
 
                     <!-- team -->
                     <div class="col-xl-3 col-lg-4 col-md-4">
