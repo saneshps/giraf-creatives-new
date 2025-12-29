@@ -489,16 +489,32 @@
                     <div class="col-xl-3 col-lg-4 col-md-4">
                         <div class="our-team">
                             <div class="pic">
-                                <img src="./img/team/safna.jpg" alt="Safna P P">
+                                <img src="./img/team/abhijith.jpg" alt="Abhijith">
 
                             </div>
                             <div class="team-content">
-                                <h3 class="title"> Safna P P </h3>
-                                <span class="post"> Senior WordPress Developer </span>
+                                <h3 class="title"> Abhijith </h3>
+                                <span class="post"> Laravel Developer </span>
                             </div>
                         </div>
                     </div>
                     <!-- team -->
+
+                    <!-- team -->
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="./img/team/pranav.jpg" alt="Pranav">
+
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title"> Pranav </h3>
+                                <span class="post"> MERN Stack Developer </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- team -->
+
                     <!-- team -->
                     <div class="col-xl-3 col-lg-4 col-md-4">
                         <div class="our-team">
@@ -509,6 +525,37 @@
                             <div class="team-content">
                                 <h3 class="title"> Sneha Rameshan </h3>
                                 <span class="post"> Front-End-Developer </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- team -->
+
+
+                    <!-- team -->
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="./img/team/safna.jpg" alt="Safna P P">
+
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title"> Safna P P </h3>
+                                <span class="post"> Senior WordPress Developer </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- team -->
+
+                    <!-- team -->
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="./img/team/Vishnumaya.jpg" alt="Vishnumaya">
+
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title"> Vishnumaya </h3>
+                                <span class="post"> UI UX Designer</span>
                             </div>
                         </div>
                     </div>
@@ -605,6 +652,8 @@
                     </div>
                     <!-- team -->
 
+
+
                     <!-- team -->
                     <div class="col-xl-3 col-lg-4 col-md-4">
                         <div class="our-team">
@@ -615,6 +664,36 @@
                             <div class="team-content">
                                 <h3 class="title"> Sreerag </h3>
                                 <span class="post"> Animator </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- team -->
+
+                    <!-- team -->
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="./img/team/Shahla.jpg" alt="Shahla">
+
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title"> Shahla </h3>
+                                <span class="post"> Animator </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- team -->
+
+                    <!-- team -->
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="./img/team/Trisha.jpg" alt="Trisha">
+
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title"> Trisha </h3>
+                                <span class="post"> Jr Animator </span>
                             </div>
                         </div>
                     </div>

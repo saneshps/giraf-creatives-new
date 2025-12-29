@@ -747,6 +747,39 @@ $result = $conn->query($sql);
                                     <div class="swiper-slide">
                                         <div class="our-team">
                                             <div class="pic">
+                                                <img src="./img/team/abhijith.jpg" alt="Abhijith">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Abhijith </h3>
+                                                <span class="post"> Laravel Developer </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+
+
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="./img/team/pranav.jpg" alt="Pranav">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Pranav </h3>
+                                                <span class="post"> MERN Stack Developer </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+
+
+
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
                                                 <img src="./img/team/safna.jpg" alt="Safna P P">
 
                                             </div>
@@ -767,6 +800,20 @@ $result = $conn->query($sql);
                                             <div class="team-content">
                                                 <h3 class="title"> Sneha Rameshan </h3>
                                                 <span class="post"> Front-End-Developer </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="./img/team/Vishnumaya.jpg" alt="Vishnumaya">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Vishnumaya </h3>
+                                                <span class="post"> UI UX Designer </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1169,26 +1216,26 @@ $result = $conn->query($sql);
                             <div class="swiper-wrapper">
                                 <!-- 1 -->
                                 <?php
-                if ($result->num_rows > 0) {
-                  while ($row = $result->fetch_assoc()) {
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
 
-                ?>
-                                <div class="swiper-slide">
-                                    <div class="row">
-                                        <div class="col-xl-5 bloghomeSwiper-pic">
-                                            <img src="https://bigleap.tech/cms/storage/app/public/<?= isset($row['default_image']) ? $row['default_image'] : $row['blog_image']; ?>"
-                                                alt="<?= isset($row['image_alt']) ? $row['image_alt'] : $row['blog_image_alt']; ?>">
+                                ?>
+                                        <div class="swiper-slide">
+                                            <div class="row">
+                                                <div class="col-xl-5 bloghomeSwiper-pic">
+                                                    <img src="https://bigleap.tech/cms/storage/app/public/<?= isset($row['default_image']) ? $row['default_image'] : $row['blog_image']; ?>"
+                                                        alt="<?= isset($row['image_alt']) ? $row['image_alt'] : $row['blog_image_alt']; ?>">
+                                                </div>
+                                                <div class="col-xl-7 bloghomeSwiper-details">
+                                                    <h2> <?php echo $row['blog_title']; ?> </h2>
+                                                    <p><?php echo implode(' ', array_slice(explode("\n", strip_tags($row['blog_description'])), 0, 1)); ?>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-xl-7 bloghomeSwiper-details">
-                                            <h2> <?php echo $row['blog_title']; ?> </h2>
-                                            <p><?php echo implode(' ', array_slice(explode("\n", strip_tags($row['blog_description'])), 0, 1)); ?>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
                                 <?php  }
-                }
-                ?>
+                                }
+                                ?>
                                 <!-- 1 -->
                                 <!-- 1 -->
 
@@ -1309,123 +1356,123 @@ $result = $conn->query($sql);
 
     <!-- humberger menu -->
     <script>
-    let navButton = document.querySelector(".nav-button");
+        let navButton = document.querySelector(".nav-button");
 
-    navButton.addEventListener("click", e => {
-        e.preventDefault();
+        navButton.addEventListener("click", e => {
+            e.preventDefault();
 
-        // toggle nav state
-        document.body.classList.toggle("nav-visible");
-    });
+            // toggle nav state
+            document.body.classList.toggle("nav-visible");
+        });
     </script>
     <!-- humberger menu -->
 
 
     <!-- animate aos -->
     <script>
-    AOS.init();
+        AOS.init();
     </script>
 
     <!--// animate aos -->
 
     <!-- Team slider -->
     <script>
-    var swiper = new Swiper(".teamSlider", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
+        var swiper = new Swiper(".teamSlider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
 
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            1200: {
-                slidesPerView: 3,
-                spaceBetween: 20
-            },
-            1400: {
-                slidesPerView: 3,
-                spaceBetween: 20
-            },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1400: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
 
-            1920: {
-                slidesPerView: 4,
-                spaceBetween: 40
-            }
-        },
-    });
+                1920: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            },
+        });
     </script>
     <!--// Team slider -->
 
     <!-- Clients -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script>
-    $(document).ready(function() {
-        $('.customer-logos').slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            arrows: false,
-            dots: false,
-            pauseOnHover: false,
-            responsive: [{
-                    breakpoint: 1920,
-                    settings: {
-                        slidesToShow: 6
-                    }
-                },
-                {
-                    breakpoint: 1600,
-                    settings: {
-                        slidesToShow: 5
-                    }
-                },
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
+        $(document).ready(function() {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                        breakpoint: 1920,
+                        settings: {
+                            slidesToShow: 6
+                        }
+                    },
+                    {
+                        breakpoint: 1600,
+                        settings: {
+                            slidesToShow: 5
+                        }
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
 
-                {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 2
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 2
+                        }
                     }
-                }
-            ]
+                ]
+            });
         });
-    });
     </script>
     <!--// Clients -->
 
@@ -1435,57 +1482,57 @@ $result = $conn->query($sql);
     </script>
 
     <script>
-    $(document).ready(function() {
-        $("#testimonial-slider").owlCarousel({
-            items: 1,
-            itemsDesktop: [1000, 1],
-            itemsDesktopSmall: [979, 1],
-            itemsTablet: [768, 1],
-            margin: 10,
-            pagination: false,
-            navigation: true,
-            navigationText: ["", ""],
-            autoPlay: true
+        $(document).ready(function() {
+            $("#testimonial-slider").owlCarousel({
+                items: 1,
+                itemsDesktop: [1000, 1],
+                itemsDesktopSmall: [979, 1],
+                itemsTablet: [768, 1],
+                margin: 10,
+                pagination: false,
+                navigation: true,
+                navigationText: ["", ""],
+                autoPlay: true
+            });
         });
-    });
     </script>
     <!--// testimonials -->
 
     <!-- blogs area -->
 
     <script>
-    var swiper = new Swiper(".bloghomeSwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
+        var swiper = new Swiper(".bloghomeSwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 
     <!--// blogs area -->
 
     <!-- sticky menu -->
     <script type="text/javascript">
-    $(function() {
-        var navbar = $('.header');
-        $(window).scroll(function() {
-            if ($(window).scrollTop() <= 40) {
-                navbar.removeClass('navbar-scroll');
-            } else {
-                navbar.addClass('navbar-scroll');
-            }
+        $(function() {
+            var navbar = $('.header');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 40) {
+                    navbar.removeClass('navbar-scroll');
+                } else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
         });
-    });
     </script>
     <!--// sticky menu -->
 
