@@ -1,10 +1,23 @@
 <?php include('db_connect.php');
-$sql = "SELECT blogs.*, websites.*, blogs.created_at as created_at
+$sql = "SELECT blogs.*, 
+        blog_translations.slug,
+        blog_translations.meta_title,
+        blog_translations.meta_description,
+        blog_translations.blog_title,
+        blog_translations.blog_description,
+        blog_translations.image_alt,
+        blog_translations.blog_image_alt,
+        websites.name as website_name,
+        websites.domain,
+        blogs.created_at as created_at,
+        blogs.image as default_image
         FROM blogs
+        JOIN blog_translations ON blogs.id = blog_translations.blog_id
         JOIN websites ON blogs.website_id = websites.id
-        WHERE blogs.status = 1
+        WHERE blogs.status = 'active'
           AND blogs.deleted_at IS NULL
-          AND websites.title LIKE '%giraf%'
+          AND blog_translations.language = 'en'
+          AND websites.name LIKE '%giraf%'
         ORDER BY blogs.created_at DESC";
 
 $result = $conn->query($sql);
@@ -122,50 +135,50 @@ $result = $conn->query($sql);
         <div class="main-box">
             <div class="row">
                 <?php
-        if ($result->num_rows > 0) {
-          while ($row = $result->fetch_assoc()) {
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
 
-        ?>
-                <!-- blog-box -->
-                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                    <div class="post-slide-blog">
-                        <a href="blog-details/<?php echo $row['slug']; ?>">
-                            <div class="pic">
-                                <img src="https://bigleap.tech/cms/storage/app/public/<?= $row['default_image']; ?>"
-                                    alt="<?php echo $row['image_alt']; ?>">
+                ?>
+                        <!-- blog-box -->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                            <div class="post-slide-blog">
+                                <a href="blog-details/<?php echo $row['slug']; ?>">
+                                    <div class="pic">
+                                        <img src="https://bigleap.tech/cms/storage/app/public/<?= $row['default_image']; ?>"
+                                            alt="<?php echo $row['image_alt']; ?>">
+                                    </div>
+                                </a>
+
+                                <ul class="post-bar">
+                                    <a href="blog-details/<?php echo $row['slug']; ?>">
+                                        <li><?php echo (new DateTime($row['created_at']))->format('M d, Y'); ?></li>
+                                    </a>
+                                    <a href="blog-details/<?php echo $row['slug']; ?>">
+                                        <li><i class="fa fa-users"></i> Giraf </li>
+                                    </a>
+                                </ul>
+
+                                <div class="post-header">
+                                    <h2 class="post-title"> <a href="blog-details/<?php echo $row['slug']; ?>">
+                                            <?php echo $row['blog_title']; ?> </a> </h2>
+                                </div>
+
+
+                                <p class="post-description">
+                                    <a href="blog-details/<?php echo $row['slug']; ?>">
+                                        <span><?php echo implode(' ', array_slice(explode(' ', strip_tags($row['blog_description'])), 0, 50)) . '...'; ?></span>
+                                    </a>
+                                </p>
+
+                                <a href="blog-details/<?php echo $row['slug']; ?>" class="read-more">read more</a>
                             </div>
-                        </a>
 
-                        <ul class="post-bar">
-                            <a href="blog-details/<?php echo $row['slug']; ?>">
-                                <li><?php echo (new DateTime($row['created_at']))->format('M d, Y'); ?></li>
-                            </a>
-                            <a href="blog-details/<?php echo $row['slug']; ?>">
-                                <li><i class="fa fa-users"></i> Giraf </li>
-                            </a>
-                        </ul>
 
-                        <div class="post-header">
-                            <h2 class="post-title"> <a href="blog-details/<?php echo $row['slug']; ?>">
-                                    <?php echo $row['blog_title']; ?> </a> </h2>
                         </div>
 
-
-                        <p class="post-description">
-                            <a href="blog-details/<?php echo $row['slug']; ?>">
-                                <span><?php echo implode(' ', array_slice(explode(' ', strip_tags($row['blog_description'])), 0, 50)) . '...'; ?></span>
-                            </a>
-                        </p>
-
-                        <a href="blog-details/<?php echo $row['slug']; ?>" class="read-more">read more</a>
-                    </div>
-
-
-                </div>
-
                 <?php  }
-        }
-        ?>
+                }
+                ?>
                 <!-- blog-box -->
 
             </div>
@@ -246,131 +259,131 @@ $result = $conn->query($sql);
 
     <!-- humberger menu -->
     <script>
-    let navButton = document.querySelector(".nav-button");
+        let navButton = document.querySelector(".nav-button");
 
-    navButton.addEventListener("click", e => {
-        e.preventDefault();
+        navButton.addEventListener("click", e => {
+            e.preventDefault();
 
-        // toggle nav state
-        document.body.classList.toggle("nav-visible");
-    });
+            // toggle nav state
+            document.body.classList.toggle("nav-visible");
+        });
     </script>
     <!-- humberger menu -->
 
 
     <!-- animate aos -->
     <script>
-    AOS.init();
+        AOS.init();
     </script>
 
     <!--// animate aos -->
 
     <!-- Team slider -->
     <script>
-    var swiper = new Swiper(".teamSlider", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
+        var swiper = new Swiper(".teamSlider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
-            // when window width is >= 480px
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 30
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
             },
-            // when window width is >= 640px
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 40
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            992: {
-                slidesPerView: 2,
-                spaceBetween: 40
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                1600: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                },
+                1920: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
             },
-            1200: {
-                slidesPerView: 3,
-                spaceBetween: 40
-            },
-            1600: {
-                slidesPerView: 4,
-                spaceBetween: 40
-            },
-            1920: {
-                slidesPerView: 4,
-                spaceBetween: 40
-            }
-        },
-    });
+        });
     </script>
     <!--// Team slider -->
 
     <!-- Clients -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script>
-    $(document).ready(function() {
-        $('.customer-logos').slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            arrows: false,
-            dots: false,
-            pauseOnHover: false,
-            responsive: [{
-                    breakpoint: 1920,
-                    settings: {
-                        slidesToShow: 6
-                    }
-                },
-                {
-                    breakpoint: 1600,
-                    settings: {
-                        slidesToShow: 5
-                    }
-                },
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
+        $(document).ready(function() {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                        breakpoint: 1920,
+                        settings: {
+                            slidesToShow: 6
+                        }
+                    },
+                    {
+                        breakpoint: 1600,
+                        settings: {
+                            slidesToShow: 5
+                        }
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
 
-                {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 2
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 2
+                        }
                     }
-                }
-            ]
+                ]
+            });
         });
-    });
     </script>
     <!--// Clients -->
 
@@ -380,37 +393,37 @@ $result = $conn->query($sql);
     </script>
 
     <script>
-    $(document).ready(function() {
-        $("#testimonial-slider").owlCarousel({
-            items: 1,
-            itemsDesktop: [1000, 1],
-            itemsDesktopSmall: [979, 1],
-            itemsTablet: [768, 1],
-            margin: 10,
-            pagination: false,
-            navigation: true,
-            navigationText: ["", ""],
-            autoPlay: true
+        $(document).ready(function() {
+            $("#testimonial-slider").owlCarousel({
+                items: 1,
+                itemsDesktop: [1000, 1],
+                itemsDesktopSmall: [979, 1],
+                itemsTablet: [768, 1],
+                margin: 10,
+                pagination: false,
+                navigation: true,
+                navigationText: ["", ""],
+                autoPlay: true
+            });
         });
-    });
     </script>
     <!--// testimonials -->
 
     <!-- blogs area -->
     <script>
-    var swiper = new Swiper('.blog-slider', {
-        spaceBetween: 30,
-        effect: 'fade',
-        loop: true,
-        mousewheel: {
-            invert: false,
-        },
-        // autoHeight: true,
-        pagination: {
-            el: '.blog-slider__pagination',
-            clickable: true,
-        }
-    });
+        var swiper = new Swiper('.blog-slider', {
+            spaceBetween: 30,
+            effect: 'fade',
+            loop: true,
+            mousewheel: {
+                invert: false,
+            },
+            // autoHeight: true,
+            pagination: {
+                el: '.blog-slider__pagination',
+                clickable: true,
+            }
+        });
     </script>
     <!--// blogs area -->
 

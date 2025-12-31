@@ -1,11 +1,25 @@
 <?php include('db_connect.php');
-$sql = "SELECT blogs.*, websites.*,blogs.created_at as created_at
+$sql = "SELECT blogs.*, 
+        blog_translations.slug,
+        blog_translations.meta_title,
+        blog_translations.meta_description,
+        blog_translations.blog_title,
+        blog_translations.blog_description,
+        blog_translations.image_alt,
+        blog_translations.blog_image_alt,
+        websites.name as website_name,
+        websites.domain,
+        blogs.created_at as created_at,
+        blogs.image as default_image
         FROM blogs
+        JOIN blog_translations ON blogs.id = blog_translations.blog_id
         JOIN websites ON blogs.website_id = websites.id
-        WHERE blogs.status = 1
+        WHERE blogs.status = 'active'
           AND blogs.deleted_at IS NULL
-          AND websites.title LIKE '%giraf%'  
-          ORDER BY blogs.created_at DESC";
+          AND blog_translations.language = 'en'
+          AND websites.name LIKE '%giraf%'
+        ORDER BY blogs.created_at DESC";
+
 $result = $conn->query($sql);
 ?>
 <!DOCTYPE html>
