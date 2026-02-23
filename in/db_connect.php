@@ -2,7 +2,8 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "bigleapt_cms";
+$database = "giraf_new_db";
+// $database = "bigleapt_cms";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);

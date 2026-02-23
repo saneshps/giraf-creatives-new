@@ -1,25 +1,16 @@
 <?php include('db_connect.php');
-$sql = "SELECT blogs.*, 
-        blog_translations.slug,
-        blog_translations.meta_title,
-        blog_translations.meta_description,
-        blog_translations.blog_title,
-        blog_translations.blog_description,
-        blog_translations.image_alt,
-        blog_translations.blog_image_alt,
-        websites.name as website_name,
-        websites.domain,
-        blogs.created_at as created_at,
-        blogs.image as default_image
+$sql = "SELECT blogs.*, websites.*, blogs.created_at as created_at, 
+               blog_translations.blog_title, blog_translations.blog_description, 
+               blog_translations.slug, blog_translations.image_alt, blog_translations.blog_image_alt,
+               blogs.image as default_image
         FROM blogs
-        JOIN blog_translations ON blogs.id = blog_translations.blog_id
         JOIN websites ON blogs.website_id = websites.id
+        LEFT JOIN blog_translations ON blogs.id = blog_translations.blog_id AND blog_translations.language = 'en'
         WHERE blogs.status = 'active'
           AND blogs.deleted_at IS NULL
-          AND blog_translations.language = 'en'
-          AND websites.name LIKE '%giraf%'
-        ORDER BY blogs.created_at DESC";
-
+          AND blog_translations.deleted_at IS NULL
+          AND websites.name LIKE '%giraf%'  
+          ORDER BY blogs.created_at DESC";
 $result = $conn->query($sql);
 ?>
 <!DOCTYPE html>
@@ -544,6 +535,20 @@ $result = $conn->query($sql);
                                             </div>
                                             <div class="team-content">
                                                 <h3 class="title"> Kavya Sagar </h3>
+                                                <span class="post"> Technical Advisor </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="./img/team/Dibin-Kumar-C.jpeg" alt="Dibin-Kumar-C">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Dibin Kumar C </h3>
                                                 <span class="post"> Technical Lead </span>
                                             </div>
                                         </div>
@@ -586,6 +591,21 @@ $result = $conn->query($sql);
                                     <div class="swiper-slide">
                                         <div class="our-team">
                                             <div class="pic">
+                                                <img src="./img/team/divya.jpg" alt="divya">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Divya Chacko </h3>
+                                                <span class="post"> Head of SEO </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
                                                 <img src="./img/team/Sanesh.jpg" alt="Sanesh">
 
                                             </div>
@@ -596,6 +616,23 @@ $result = $conn->query($sql);
                                         </div>
                                     </div>
                                     <!-- slide -->
+
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="./img/team/Safwan.jpg" alt="Safwan">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Safwan V </h3>
+                                                <span class="post"> Mobile App Developer </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+
+
 
                                     <!-- slide -->
                                     <div class="swiper-slide">
@@ -673,56 +710,6 @@ $result = $conn->query($sql);
                                     </div>
                                     <!-- slide -->
 
-
-
-                                    <!-- slide -->
-                                    <div class="swiper-slide">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/team/divya.jpg" alt="divya">
-
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title"> Divya Chacko </h3>
-                                                <span class="post"> Head of SEO </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slide -->
-
-                                    <!-- slide -->
-                                    <div class="swiper-slide">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/team/Safwan.jpg" alt="Safwan">
-
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title"> Safwan V </h3>
-                                                <span class="post"> Mobile App Developer </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slide -->
-
-                                    <!-- slide -->
-                                    <div class="swiper-slide">
-                                        <div class="our-team">
-                                            <div class="pic">
-                                                <img src="./img/team/hiran.jpg" alt="hiran">
-
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="title"> Hiran Sagar </h3>
-                                                <span class="post"> Mobile App Developer </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slide -->
-
-
-
-
                                     <!-- slide -->
                                     <div class="swiper-slide">
                                         <div class="our-team">
@@ -740,6 +727,20 @@ $result = $conn->query($sql);
 
 
 
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="./img/team/salih.jpeg" alt="Muhammed Salih">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Muhammed Salih </h3>
+                                                <span class="post"> Senior Laravel Developer </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
                                     <!-- slide -->
                                     <div class="swiper-slide">
                                         <div class="our-team">
@@ -814,6 +815,34 @@ $result = $conn->query($sql);
                                             <div class="team-content">
                                                 <h3 class="title"> Sneha Rameshan </h3>
                                                 <span class="post"> Front-End-Developer </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="./img/team/lijosh.jpeg" alt="Lijosh">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Lijosh </h3>
+                                                <span class="post"> Flutter Developer </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="./img/team/jisna-liya.jpeg" alt="Jisna Liya">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Jisna Liya </h3>
+                                                <span class="post"> Jr. Flutter Developer</span>
                                             </div>
                                         </div>
                                     </div>
@@ -937,6 +966,20 @@ $result = $conn->query($sql);
                                             <div class="team-content">
                                                 <h3 class="title"> Vishnu P</h3>
                                                 <span class="post"> SEO Analyst </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="./img/team/Adarsh.jpeg" alt="Adarsh">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Adarsh </h3>
+                                                <span class="post"> Performance Marketer</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1238,11 +1281,12 @@ $result = $conn->query($sql);
                                             <div class="row">
                                                 <div class="col-xl-5 bloghomeSwiper-pic">
                                                     <img src="https://bigleap.tech/cms/storage/app/public/<?= isset($row['default_image']) ? $row['default_image'] : $row['blog_image']; ?>"
-                                                        alt="<?= isset($row['image_alt']) ? $row['image_alt'] : $row['blog_image_alt']; ?>">
+                                                        alt="<?= isset($row['image_alt']) ? $row['image_alt'] : (isset($row['blog_image_alt']) ? $row['blog_image_alt'] : ''); ?>">
                                                 </div>
                                                 <div class="col-xl-7 bloghomeSwiper-details">
-                                                    <h2> <?php echo $row['blog_title']; ?> </h2>
-                                                    <p><?php echo implode(' ', array_slice(explode("\n", strip_tags($row['blog_description'])), 0, 1)); ?>
+                                                    <h2> <?php echo isset($row['blog_title']) ? $row['blog_title'] : ''; ?>
+                                                    </h2>
+                                                    <p><?php echo isset($row['blog_description']) ? implode(' ', array_slice(explode("\n", strip_tags($row['blog_description'])), 0, 1)) : ''; ?>
                                                     </p>
                                                 </div>
                                             </div>

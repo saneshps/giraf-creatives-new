@@ -152,7 +152,7 @@
 
                                     </div>
                                     <div class="team-content">
-                                        <h3 class="title"> Mr. Basanth Ragavan </h3>
+                                        <h3 class="title"> Mr. Basanth Raghavan </h3>
                                         <span class="post"> CEO </span>
                                     </div>
                                 </div>
@@ -402,6 +402,20 @@
                             </div>
                             <div class="team-content">
                                 <h3 class="title"> Kavya Sagar </h3>
+                                <span class="post"> Technical Advisor </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- team -->
+                    <!-- team -->
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="./img/team/Dibin-Kumar-C.jpeg" alt="Dibin-Kumar-C">
+
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title"> Dibin Kumar C </h3>
                                 <span class="post"> Technical Lead </span>
                             </div>
                         </div>
@@ -417,7 +431,7 @@
                             </div>
                             <div class="team-content">
                                 <h3 class="title"> Sanesh P S </h3>
-                                <span class="post"> Team Lead </span>
+                                <span class="post"> Front-End Team Lead </span>
                             </div>
                         </div>
                     </div>
@@ -432,26 +446,12 @@
                             </div>
                             <div class="team-content">
                                 <h3 class="title"> Safwan V </h3>
-                                <span class="post"> Mobile App Developer </span>
+                                <span class="post"> Mobile App Team Lead </span>
                             </div>
                         </div>
                     </div>
                     <!-- team -->
 
-                    <!-- team -->
-                    <div class="col-xl-3 col-lg-4 col-md-4">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="./img/team/hiran.jpg" alt="hiran">
-
-                            </div>
-                            <div class="team-content">
-                                <h3 class="title"> Hiran Sagar </h3>
-                                <span class="post"> Mobile App Developer </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- team -->
 
 
 
@@ -465,6 +465,21 @@
                             <div class="team-content">
                                 <h3 class="title"> Akhila Sasidharan </h3>
                                 <span class="post"> Team Lead Laravel </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- team -->
+
+                    <!-- team -->
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="./img/team/salih.jpeg" alt="Muhammed Salih">
+
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title"> Muhammed Salih </h3>
+                                <span class="post"> Senior Laravel Developer </span>
                             </div>
                         </div>
                     </div>
@@ -525,6 +540,36 @@
                             <div class="team-content">
                                 <h3 class="title"> Sneha Rameshan </h3>
                                 <span class="post"> Front-End-Developer </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- team -->
+
+                    <!-- team -->
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="./img/team/lijosh.jpeg" alt="Lijosh">
+
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title"> Lijosh </h3>
+                                <span class="post"> Mobile App Developer </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- team -->
+
+                    <!-- team -->
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="./img/team/jisna-liya.jpeg" alt="Jisna Liya">
+
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title"> Jisna Liya </h3>
+                                <span class="post"> Mobile App Developer </span>
                             </div>
                         </div>
                     </div>
@@ -817,6 +862,21 @@
                             <div class="team-content">
                                 <h3 class="title"> Vishnu P </h3>
                                 <span class="post"> SEO Analyst </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- team -->
+
+                    <!-- team -->
+                    <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="./img/team/Adarsh.jpeg" alt="Adarsh">
+
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title"> Adarsh </h3>
+                                <span class="post"> Performance Marketer </span>
                             </div>
                         </div>
                     </div>
@@ -1349,131 +1409,131 @@
 
     <!-- humberger menu -->
     <script>
-    let navButton = document.querySelector(".nav-button");
+        let navButton = document.querySelector(".nav-button");
 
-    navButton.addEventListener("click", e => {
-        e.preventDefault();
+        navButton.addEventListener("click", e => {
+            e.preventDefault();
 
-        // toggle nav state
-        document.body.classList.toggle("nav-visible");
-    });
+            // toggle nav state
+            document.body.classList.toggle("nav-visible");
+        });
     </script>
     <!-- humberger menu -->
 
 
     <!-- animate aos -->
     <script>
-    AOS.init();
+        AOS.init();
     </script>
 
     <!--// animate aos -->
 
     <!-- Team slider -->
     <script>
-    var swiper = new Swiper(".teamSlider", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
+        var swiper = new Swiper(".teamSlider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
-            // when window width is >= 480px
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 30
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
             },
-            // when window width is >= 640px
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 40
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            992: {
-                slidesPerView: 2,
-                spaceBetween: 40
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                1600: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                },
+                1920: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
             },
-            1200: {
-                slidesPerView: 3,
-                spaceBetween: 40
-            },
-            1600: {
-                slidesPerView: 4,
-                spaceBetween: 40
-            },
-            1920: {
-                slidesPerView: 4,
-                spaceBetween: 40
-            }
-        },
-    });
+        });
     </script>
     <!--// Team slider -->
 
     <!-- Clients -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script>
-    $(document).ready(function() {
-        $('.customer-logos').slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            arrows: false,
-            dots: false,
-            pauseOnHover: false,
-            responsive: [{
-                    breakpoint: 1920,
-                    settings: {
-                        slidesToShow: 6
-                    }
-                },
-                {
-                    breakpoint: 1600,
-                    settings: {
-                        slidesToShow: 5
-                    }
-                },
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
+        $(document).ready(function() {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                        breakpoint: 1920,
+                        settings: {
+                            slidesToShow: 6
+                        }
+                    },
+                    {
+                        breakpoint: 1600,
+                        settings: {
+                            slidesToShow: 5
+                        }
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
 
-                {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 2
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 2
+                        }
                     }
-                }
-            ]
+                ]
+            });
         });
-    });
     </script>
     <!--// Clients -->
 
@@ -1483,37 +1543,37 @@
     </script>
 
     <script>
-    $(document).ready(function() {
-        $("#testimonial-slider").owlCarousel({
-            items: 1,
-            itemsDesktop: [1000, 1],
-            itemsDesktopSmall: [979, 1],
-            itemsTablet: [768, 1],
-            margin: 10,
-            pagination: false,
-            navigation: true,
-            navigationText: ["", ""],
-            autoPlay: true
+        $(document).ready(function() {
+            $("#testimonial-slider").owlCarousel({
+                items: 1,
+                itemsDesktop: [1000, 1],
+                itemsDesktopSmall: [979, 1],
+                itemsTablet: [768, 1],
+                margin: 10,
+                pagination: false,
+                navigation: true,
+                navigationText: ["", ""],
+                autoPlay: true
+            });
         });
-    });
     </script>
     <!--// testimonials -->
 
     <!-- blogs area -->
     <script>
-    var swiper = new Swiper('.blog-slider', {
-        spaceBetween: 30,
-        effect: 'fade',
-        loop: true,
-        mousewheel: {
-            invert: false,
-        },
-        // autoHeight: true,
-        pagination: {
-            el: '.blog-slider__pagination',
-            clickable: true,
-        }
-    });
+        var swiper = new Swiper('.blog-slider', {
+            spaceBetween: 30,
+            effect: 'fade',
+            loop: true,
+            mousewheel: {
+                invert: false,
+            },
+            // autoHeight: true,
+            pagination: {
+                el: '.blog-slider__pagination',
+                clickable: true,
+            }
+        });
     </script>
     <!--// blogs area -->
 
