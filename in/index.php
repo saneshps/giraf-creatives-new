@@ -714,6 +714,21 @@ $result = $conn->query($sql);
                                     <div class="swiper-slide">
                                         <div class="our-team">
                                             <div class="pic">
+                                                <img src="./img/team/Althaf.jpg" alt="Althaf">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Althaf Banna </h3>
+                                                <span class="post"> Rigging Artist </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
                                                 <img src="./img/team/akhila.jpg" alt="akhila">
 
                                             </div>
@@ -891,6 +906,21 @@ $result = $conn->query($sql);
                                             <div class="team-content">
                                                 <h3 class="title"> Vyshnavi M V </h3>
                                                 <span class="post"> Content Writer </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide -->
+
+                                    <!-- slide -->
+                                    <div class="swiper-slide">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                            <img src="./img/team/Fayis.jpg" alt="Fayis">
+
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title"> Fayis Muhammed </h3>
+                                                <span class="post"> Copywriter </span>
                                             </div>
                                         </div>
                                     </div>
