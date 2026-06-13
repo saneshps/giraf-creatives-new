@@ -415,7 +415,7 @@
 
                             </div>
                             <div class="team-content">
-                                <h3 class="title"> Dibin Kumar C </h3>
+                                <h3 class="title"> Dibin Kumar </h3>
                                 <span class="post"> Technical Lead </span>
                             </div>
                         </div>
@@ -493,7 +493,7 @@
 
                             </div>
                             <div class="team-content">
-                                <h3 class="title"> Muhsin </h3>
+                                <h3 class="title"> Muhammed Muhsin </h3>
                                 <span class="post"> Senior Laravel Developer </span>
                             </div>
                         </div>
@@ -508,7 +508,7 @@
 
                             </div>
                             <div class="team-content">
-                                <h3 class="title"> Abhijith </h3>
+                                <h3 class="title"> Abhijith Joshy </h3>
                                 <span class="post"> Laravel Developer </span>
                             </div>
                         </div>
@@ -523,7 +523,7 @@
 
                             </div>
                             <div class="team-content">
-                                <h3 class="title"> Pranav </h3>
+                                <h3 class="title"> Pranav Pradeep </h3>
                                 <span class="post"> MERN Stack Developer </span>
                             </div>
                         </div>
@@ -569,7 +569,7 @@
                             </div>
                             <div class="team-content">
                                 <h3 class="title"> Jisna Liya </h3>
-                                <span class="post"> Mobile App Developer </span>
+                                <span class="post">  Flutter Developer </span>
                             </div>
                         </div>
                     </div>
@@ -584,7 +584,7 @@
 
                             </div>
                             <div class="team-content">
-                                <h3 class="title"> Safna P P </h3>
+                                <h3 class="title"> Safna  </h3>
                                 <span class="post"> Senior WordPress Developer </span>
                             </div>
                         </div>
@@ -661,7 +661,7 @@
                             </div>
                             <div class="team-content">
                                 <h3 class="title"> Basil </h3>
-                                <span class="post"> Animator Head </span>
+                                <span class="post"> Animation Team Lead </span>
                             </div>
                         </div>
                     </div>
@@ -811,7 +811,7 @@
                             </div>
                             <div class="team-content">
                                 <h3 class="title"> Divya Chacko </h3>
-                                <span class="post"> Head of SEO </span>
+                                <span class="post"> SEO Team Lead </span>
                             </div>
                         </div>
                     </div>
@@ -874,7 +874,7 @@
 
                             </div>
                             <div class="team-content">
-                                <h3 class="title"> Vishnu P </h3>
+                                <h3 class="title"> Vishnu Prasannan  </h3>
                                 <span class="post"> SEO Analyst </span>
                             </div>
                         </div>
@@ -889,7 +889,7 @@
 
                             </div>
                             <div class="team-content">
-                                <h3 class="title"> Adarsh </h3>
+                                <h3 class="title"> Adarsh Madhavan </h3>
                                 <span class="post"> Performance Marketer </span>
                             </div>
                         </div>
@@ -919,7 +919,7 @@
 
                             </div>
                             <div class="team-content">
-                                <h3 class="title"> Vyshnavi M V </h3>
+                                <h3 class="title"> Vyshnavi </h3>
                                 <span class="post"> Content Writer </span>
                             </div>
                         </div>
