@@ -67,7 +67,23 @@
   <!-- fancy box -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <!-- fancy box -->
+
+  
+  <link rel="alternate" hreflang="en" href="https://girafcreatives.com/" />
+<link rel="alternate" hreflang="de" href="https://girafcreatives.com/de/" />
+<link rel="alternate" hreflang="en-DE" href="https://girafcreatives.com/de/en/" />
+<link rel="alternate" hreflang="en-IN" href="https://girafcreatives.com/in/" />
+<link rel="alternate" hreflang="en-GB" href="https://girafcreatives.com/uk/" />
+<link rel="alternate" hreflang="x-default" href="https://girafcreatives.com/" />
+
   <?php include("gtag_head.php"); ?>
+
+  
+<!-- CookieConsent -->
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/35eaccce22fb0d051cda9731c9be6e07.js">
+    </script>
+    <!-- CookieConsent -->
+     
 </head>
 
 <body>

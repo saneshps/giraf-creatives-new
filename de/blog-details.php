@@ -1,34 +1,52 @@
-<?php include('db_connect.php');
-$slug = filter_var($_GET['slug'], FILTER_SANITIZE_STRING);
-$sql = "SELECT blogs.*, websites.*, blogs.created_at as created_at
+<?php include('db_common_cms.php');
+// Check if slug is set
+if (!isset($_GET['slug']) || empty($_GET['slug'])) {
+    header("Location: blogs.php");
+    exit;
+}
+
+$slug = htmlspecialchars($_GET['slug'], ENT_QUOTES, 'UTF-8');
+$slug = preg_replace('/\.php$/', '', $slug); // removes .php only at the end
+
+$sql = "SELECT blogs.*, websites.*, 'locations.*', blogs.created_at as created_at
         FROM blogs
         JOIN websites ON blogs.website_id = websites.id
+        JOIN locations ON blogs.location_id = locations.id
+
         WHERE blogs.slug = '$slug'
-          AND blogs.status = 1
-          AND blogs.deleted_at IS NULL
-          AND websites.title LIKE '%giraf%'
+         AND blogs.status = 1
+         AND blogs.deleted_at IS NULL
+         AND websites.title LIKE '%Giraf%'
+         AND locations.location_name LIKE '%de%'
+
            ORDER BY blogs.created_at DESC";
 $result = $conn->query($sql);
 
-$sql1 = "SELECT blogs.*, websites.*, blogs.created_at as created_at
+$sql1 = "SELECT blogs.*, websites.*, locations.*, blogs.created_at as created_at
          FROM blogs
          JOIN websites ON blogs.website_id = websites.id
+         JOIN locations ON blogs.location_id = locations.id
+
          WHERE blogs.status = 1
-           AND blogs.deleted_at IS NULL
-           AND websites.title LIKE '%giraf%'
+            AND blogs.deleted_at IS NULL
+            AND websites.title LIKE '%Giraf%'
+            AND locations.location_name LIKE '%de%'
          ORDER BY blogs.created_at DESC
          LIMIT 4";
 $results = $conn->query($sql1);
 
 ?>
 <!-- <?php
-      if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-      ?>
+if ($result->num_rows > 0) {
+$row = $result->fetch_assoc();
+
+  $metaTitle = !empty($row['meta_title']) ? $row['meta_title'] : $row['title'];
+  $metaDescription = !empty($row['meta_description']) ? $row['meta_description'] : substr(strip_tags($row['description']), 0, 160); // fallback
+?>
 
 
 <?php
-      }
+}
 ?> -->
 <!DOCTYPE html>
 
@@ -42,7 +60,7 @@ $results = $conn->query($sql1);
   <meta name="description" content="<?php echo $row['meta_description']; ?>">
   <title> <?php echo $row['meta_title']; ?> </title>
   <!-- canonical -->
-  <link href="blog-details/<?php echo $row['slug']; ?>" rel="canonical">
+  <link href="https://girafcreatives.com/de/blog-details/<?php echo $row['slug']; ?>" rel="canonical">
   <!--// canonical -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -97,8 +115,21 @@ $results = $conn->query($sql1);
   <!-- blogs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'> -->
+
+  <link rel="alternate" hreflang="en" href="https://girafcreatives.com/" />
+<link rel="alternate" hreflang="de" href="https://girafcreatives.com/de/" />
+<link rel="alternate" hreflang="en-DE" href="https://girafcreatives.com/de/en/" />
+<link rel="alternate" hreflang="en-IN" href="https://girafcreatives.com/in/" />
+<link rel="alternate" hreflang="en-GB" href="https://girafcreatives.com/uk/" />
+<link rel="alternate" hreflang="x-default" href="https://girafcreatives.com/" />
+
   <!-- blogs -->
   <?php include("gtag_head.php"); ?>
+
+  <!-- CookieConsent -->
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/35eaccce22fb0d051cda9731c9be6e07.js">
+    </script>
+    <!-- CookieConsent -->
 </head>
 
 <body>
@@ -172,13 +203,10 @@ $results = $conn->query($sql1);
                     <span> <i class="fas fa-calendar-alt"></i> <a> <?php echo (new DateTime($latest_post['created_at']))->format('M d, Y'); ?> </a> </span>
                     <h5>
                       <a href="blog-details/<?php echo $latest_post['slug']; ?>">
-                        <?php
-                        $trimmedTitle = wordwrap($latest_post['blog_title'], 20, "\n", false);
-                        $lines = explode("\n", $trimmedTitle);
-                        echo $lines[0] . '<br>' . $lines[1] . '..';
-                        ?>
+                        <?php echo mb_strimwidth(strip_tags($latest_post['blog_title']), 0, 45, '..'); ?>
                       </a>
                     </h5>
+
 
                   </div>
 

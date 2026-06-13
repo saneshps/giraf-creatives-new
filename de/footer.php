@@ -26,7 +26,7 @@
        =======================-->
 
           <img src="./img/logo.png" alt="logo">
-          <p> © 2025 Alle Rechte vorbehalten <span> <a href="https://girafcreatives.com/de" target="_blank">
+          <p> © 2026 Alle Rechte vorbehalten <span> <a href="https://girafcreatives.com/de" target="_blank">
                 Giraf Creatives </a> </span>
           </p>
           <p>
@@ -104,7 +104,18 @@
 
                   </div>
                 </a>
+<!--<a href="https://api.whatsapp.com/send?phone=+918075461989&amp;text=Hello Giraf Creatives!" target="_blank" class="orange-shadow">-->
+<!--                  <div>-->
+<!--                    <span></span>-->
+<!--                    <span></span>-->
+<!--                    <span></span>-->
+<!--                    <span></span>-->
+<!--                    <span>-->
+<!--                      <i class="fab fa-whatsapp"></i>-->
+<!--                    </span>-->
 
+<!--                  </div>-->
+<!--                </a>-->
 
 
               </div>

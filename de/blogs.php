@@ -1,13 +1,24 @@
-<?php include('db_connect.php');
-$sql = "SELECT blogs.*, websites.*, blogs.created_at as created_at
+
+<?php include('db_common_cms.php');
+
+// Enable error reporting
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Assuming $conn is your MySQLi connection
+$sql = "SELECT blogs.*, locations.*, websites.*, blogs.created_at as created_at
         FROM blogs
         JOIN websites ON blogs.website_id = websites.id
+        JOIN locations ON blogs.location_id = locations.id
         WHERE blogs.status = 1
           AND blogs.deleted_at IS NULL
-          AND websites.title LIKE '%giraf%'
+          AND websites.title LIKE '%Giraf%'
+          AND locations.location_name LIKE '%de%'
         ORDER BY blogs.created_at DESC";
 
 $result = $conn->query($sql);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,8 +85,22 @@ $result = $conn->query($sql);
   <!-- blogs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'> -->
+
+  
+  <link rel="alternate" hreflang="en" href="https://girafcreatives.com/" />
+<link rel="alternate" hreflang="de" href="https://girafcreatives.com/de/" />
+<link rel="alternate" hreflang="en-DE" href="https://girafcreatives.com/de/en/" />
+<link rel="alternate" hreflang="en-IN" href="https://girafcreatives.com/in/" />
+<link rel="alternate" hreflang="en-GB" href="https://girafcreatives.com/uk/" />
+<link rel="alternate" hreflang="x-default" href="https://girafcreatives.com/" />
+
   <!-- blogs -->
   <?php include("gtag_head.php"); ?>
+
+  <!-- CookieConsent -->
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/35eaccce22fb0d051cda9731c9be6e07.js">
+    </script>
+    <!-- CookieConsent -->
 </head>
 
 <body>
@@ -124,7 +149,7 @@ $result = $conn->query($sql);
             <!-- blog-box -->
             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
               <div class="post-slide-blog">
-                <a>
+                <a href="blog-details/<?php echo $row['slug']; ?>">
                   <div class="pic">
                     <img src="https://bigleap.tech/cms/storage/app/public/<?= $row['default_image']; ?>" alt="<?php echo $row['image_alt']; ?>">
                   </div>
@@ -150,7 +175,8 @@ $result = $conn->query($sql);
                   </a>
                 </p>
 
-                <a class="read-more">read more</a>
+                <!--<a href="blog-details/<?php echo $row['slug']; ?>" class="read-more">read more</a>-->
+                <a href="blog-details/<?php echo $row['slug']; ?>" class="read-more">read more</a>
               </div>
 
 

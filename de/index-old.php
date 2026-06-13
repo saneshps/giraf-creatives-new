@@ -1,16 +1,8 @@
 <?php include('db_connect.php');
-$sql = "SELECT blogs.*, websites.*, blogs.created_at as created_at, 
-               COALESCE(bt_de.blog_title, bt_en.blog_title) as blog_title, 
-               COALESCE(bt_de.blog_description, bt_en.blog_description) as blog_description, 
-               COALESCE(bt_de.slug, bt_en.slug) as slug, 
-               COALESCE(bt_de.image_alt, bt_en.image_alt) as image_alt, 
-               COALESCE(bt_de.blog_image_alt, bt_en.blog_image_alt) as blog_image_alt,
-               blogs.image as default_image
+$sql = "SELECT blogs.*, websites.*,blogs.created_at as created_at
         FROM blogs
         JOIN websites ON blogs.website_id = websites.id
-        LEFT JOIN blog_translations bt_de ON blogs.id = bt_de.blog_id AND bt_de.language = 'de' AND bt_de.deleted_at IS NULL
-        LEFT JOIN blog_translations bt_en ON blogs.id = bt_en.blog_id AND bt_en.language = 'en' AND bt_en.deleted_at IS NULL
-        WHERE blogs.status = 'active'
+        WHERE blogs.status = 1
           AND blogs.deleted_at IS NULL
           AND websites.name LIKE '%giraf%'  
           ORDER BY blogs.created_at DESC";
@@ -846,11 +838,11 @@ $result = $conn->query($sql);
                                             <div class="row">
                                                 <div class="col-xl-5 bloghomeSwiper-pic">
                                                     <img src="https://bigleap.tech/cms/storage/app/public/<?= isset($row['default_image']) ? $row['default_image'] : $row['blog_image']; ?>"
-                                                        alt="<?= isset($row['image_alt']) ? $row['image_alt'] : (isset($row['blog_image_alt']) ? $row['blog_image_alt'] : ''); ?>">
+                                                        alt="<?= isset($row['image_alt']) ? $row['image_alt'] : $row['blog_image_alt']; ?>">
                                                 </div>
                                                 <div class="col-xl-7 bloghomeSwiper-details">
-                                                    <h2> <?php echo isset($row['blog_title']) ? $row['blog_title'] : ''; ?> </h2>
-                                                    <p><?php echo isset($row['blog_description']) ? implode(' ', array_slice(explode("\n", strip_tags($row['blog_description'])), 0, 1)) : ''; ?>
+                                                    <h2> <?php echo $row['blog_title']; ?> </h2>
+                                                    <p><?php echo implode(' ', array_slice(explode("\n", strip_tags($row['blog_description'])), 0, 1)); ?>
                                                     </p>
                                                 </div>
                                             </div>
