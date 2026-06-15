@@ -62,7 +62,7 @@
 <link rel="alternate" hreflang="x-default" href="https://girafcreatives.com/" />
 
 
-  <?php include("gtag_head.php"); ?>
+  <?php include ('gtag_head.php'); ?>
 
   <!-- CookieConsent -->
     <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/35eaccce22fb0d051cda9731c9be6e07.js">
@@ -77,7 +77,7 @@
 
 
 
-  <?php include("header.php"); ?>
+  <?php include ('header.php'); ?>
 
 
   <!-- =====================
@@ -111,15 +111,14 @@
           <!-- col-md-4 -->
           <div class="col-xl-4 col-lg-4 col-md-12 service-detailes-brief-first">
             <h6> Web- und App-Entwicklung </h6>
-            <h4> END-TO-END WEB- UND APP-ENTWICKLUNG </h4>
+            <h4> GANZHEITLICHE WEB- UND APP-ENTWICKLUNG </h4>
           </div>
           <!--// col-md-4 -->
 
 
           <!-- col-md-8 -->
           <div class="col-xl-8 col-lg-8 col-md-12 service-detailes-brief-scnd">
-            <p> „Erleben Sie nahtlose Web- und App-Entwicklung wie nie zuvor. Stärken Sie Ihr Unternehmen,
-              erreichen Sie neue Höhen und sichern Sie sich einen Wettbewerbsvorteil.“ </p>
+            <p>  „Erleben Sie nahtlose Web- und App-Entwicklung wie nie zuvor. Stärken Sie Ihr Unternehmen, erreichen Sie neue Höhen und sichern Sie sich einen Wettbewerbsvorteil.“  </p>
           </div>
           <!--// col-md-8 -->
 
@@ -155,23 +154,23 @@
 
           <!-- col-md-12 -->
           <div class="col-md-12 service-detailes-brief-scnd flex-column align-items-start">
-            <p> Eine starke digitale Präsenz ist für den Erfolg eines Unternehmens entscheidend. In einer Zeit, in
-              der zahlreiche Unternehmen um Aufmerksamkeit auf Online-Plattformen konkurrieren, ist eine
-              gut organisierte Website unverzichtbar. </p>
-            <p> Web-App-Entwicklung umfasst die Erstellung informativer und ansprechender Websites und die
-              konsequente Sicherung hoher Standards. Dazu gehören Content-Erstellung, Design, Codierung,
-              das Verständnis der Suchintention der Nutzer und die Optimierung der Webseiten entsprechend. </p>
-            <p> Eine gut entwickelte Website, die ein reibungsloses Nutzererlebnis mit minimalen
-              Verzögerungen bietet, verwandelt Besucher in potenzielle Kunden. </p>
+          <p> Eine starke digitale Präsenz ist entscheidend für den Erfolg eines Unternehmens. In einer Zeit, in der zahlreiche Firmen auf Online-Plattformen um Aufmerksamkeit konkurrieren, ist eine professionell strukturierte Website unverzichtbar.
+
+          </p>
+          <p> Die Entwicklung von Webanwendungen umfasst die Erstellung informativer und ansprechender Websites sowie die konsequente Einhaltung hoher Qualitätsstandards. Dazu gehören Content-Erstellung, Design, Programmierung, das Verständnis der Suchintention der Nutzer sowie die entsprechende Optimierung der Websites.
+
+          </p>
+          <p> Als Webentwicklungsagentur in Deutschland erstellt Giraf professionell gestaltete Websites mit reibungsloser Benutzererfahrung, minimalen Ladezeiten und dem Ziel, Besucher in potenzielle Kunden zu verwandeln.
+
+          </p>
 
             <h5 class="mt-2 mb-2"> Vorteile einer hochwertigen Website: </h5>
             <ul>
-              <li> Erhöhte Sichtbarkeit in Medien </li>
-              <li> Umwandlung von Website-Besuchern in potenzielle Kunden </li>
-              <li> Steigerung des Markenimages </li>
+              <li> Erhöhte Sichtbarkeit in den Medien </li>
+              <li> Umwandlung von Website-Besuchern in potenzielle Kunden  </li>
+              <li> Verbesserung des Markenimages  </li>
             </ul>
-            <p> Giraf ist Ihr vertrauensvoller Webdesign-Partner — unser Hauptziel ist es, Ihre Kunden zu
-              verstehen und individuell angepasste Websites zu erstellen. </p>
+            <p> Giraf ist Ihr zuverlässiger Partner für Webdesign. Unser Hauptziel ist es, Ihre Kunden zu verstehen und maßgeschneiderte Websites zu entwickeln. </p>
           </div>
           <!--// col-md-12 -->
 
@@ -223,17 +222,16 @@
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space serv-detail-flex">
-              <h4> Front- und Backend-Webentwicklung </h4>
+              <h4> Frontend- und Backend-Webentwicklung </h4>
               <ul>
-                <li> <b> Frontend: </b> Das, was Nutzer sehen und erleben — Texte, Bilder, Videos. Technologien
-                  wie HTML (Struktur), CSS (Layout) und JavaScript (Interaktivitat) sorgen für ein
-                  reibungsloses Erlebnis. </li>
-                <li> <b> Backend: </b> Serverseitige Prozesse — Verwaltung von Daten und Sicherstellung des
-                  fehlerfreien Ablaufs im Frontend. Wichtige Programmiersprachen: PHP, Python und
-                  C++. </li>
-              </ul>
-              <p> Unsere Websites bieten ein inspirierendes, visuell ansprechendes digitales Erlebnis. </p>
-              <p> <b> Merke: </b> Eine gut strukturierte Website kann enorme Vorteile bringen. </p>
+                <li> <b> Frontend: </b> Das Frontend umfasst alles, was Nutzer sehen und erleben – Texte, Bilder und Videos. Technologien wie HTML-Strukturen, CSS-Layouts und JavaScript-Interaktivität sorgen für ein reibungsloses Nutzungserlebnis.
+               </li>
+                <li> <b> Backend: </b>  Das Backend umfasst serverseitige Prozesse zur Datenverwaltung und gewährleistet einen fehlerfreien Betrieb im Frontend. Wichtige Programmiersprachen sind PHP, Python und C++.
+              <br>
+              Mit unseren Full-Stack-Development-Services bieten unsere Websites ein inspirierendes und visuell ansprechendes digitales Erlebnis.
+              </li>
+              </ul> 
+              <p> <b> Hinweis: </b> Eine gut strukturierte Website kann enorme Vorteile mit sich bringen. </p>
             </div>
 
 
@@ -248,11 +246,12 @@
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space serv-detail-flex">
               <h4> Mobile App Entwicklung </h4>
-              <p> Mobile App Entwicklung bedeutet, Anwendungen für Geräte wie Smartphones und Tablets zu
-                erstellen. Meist für Android- und iOS-Betriebssysteme. Genutzte Programmiersprachen:
-                HTML5, Python, Swift, Java und C#. </p>
-              <p> Apps können vorinstalliert, aus App-Stores heruntergeladen oder über Browser genutzt werden
-                — sie verbessern das Nutzererlebnis und unterstützen Ihre Marketingstrategien. </p>
+             <p> Mobile App Entwicklung bedeutet die Erstellung von Anwendungen für Geräte wie Smartphones und Tablets – hauptsächlich für die Betriebssysteme Android und iOS. Verwendete Programmiersprachen sind unter anderem HTML5, Python, Swift, Java und C#.
+
+             </p>
+             <p> Als Anbieter für Mobile-App-Entwicklung in Deutschland entwickelt Giraf Apps, die vorinstalliert, über App-Stores heruntergeladen oder direkt im Browser genutzt werden können. Sie verbessern die Nutzererfahrung und unterstützen Ihre Marketingstrategien.
+
+             </p>
 
             </div>
 
@@ -266,21 +265,21 @@
             <div class="col-xl-6 col-lg-6 col-md-12">
               <div class="box-commn-mbl">
                 <h5 class="text-left"> 1. Strategie: </h5>
-                <p class="text-left"> Zieldefinition, Nutzeranalyse, Marktanalyse. </p>
+                <p class="text-left"> Definition der Ziele, Nutzeranalyse und Marktanalyse. </p>
               </div>
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12">
               <div class="box-commn-mbl">
                 <h5 class="text-left"> 2. Planung: </h5>
-                <p class="text-left"> Technologien, Werkzeuge und Zeitpläne festlegen. </p>
+                <p class="text-left">Festlegung von Technologien, Tools und Zeitplänen. </p>
               </div>
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12">
               <div class="box-commn-mbl">
                 <h5 class="text-left"> 3. Design: </h5>
-                <p class="text-left"> Visuelle Gestaltung, Funktionen, Benutzeroberfläche. </p>
+                <p class="text-left"> Visuelles Design, Funktionen und Benutzeroberfläche. </p>
               </div>
             </div>
 
@@ -289,7 +288,7 @@
             <div class="col-xl-6 col-lg-6 col-md-12">
               <div class="box-commn-mbl">
                 <h5 class="text-left"> 4. Entwicklung: </h5>
-                <p class="text-left"> Frontend, Backend, APIs und Codierung. </p>
+                <p class="text-left"> Frontend, Backend, APIs und Programmierung. </p>
 
               </div>
             </div>
@@ -298,7 +297,7 @@
             <div class="col-xl-6 col-lg-6 col-md-12">
               <div class="box-commn-mbl">
                 <h5 class="text-left"> 5. Testing: </h5>
-                <p class="text-left"> Qualitätskontrollen, Performance-, Stabilitäts- und Sicherheitstests. </p>
+                <p class="text-left"> Qualitätskontrollen sowie Leistungs-, Stabilitäts- und Sicherheitstests. </p>
 
               </div>
             </div>
@@ -307,7 +306,9 @@
             <div class="col-xl-6 col-lg-6 col-md-12">
               <div class="box-commn-mbl">
 
-                <p class="text-left"> Erleben Sie unsere App-Technologien, die Ihre Visionen auf das nächste Level heben. </p>
+                <p class="text-left"> Erleben Sie unsere App-Development-Services in Deutschland und moderne App-Technologien, die Ihre Visionen auf das nächste Level bringen. 
+
+                </p>
               </div>
             </div>
 
@@ -329,10 +330,10 @@
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space serv-detail-flex">
               <h4> Individuelle CMS-Systeme für schnelles Wachstum </h4>
-              <p> Ein Content Management System (CMS) unterstützt effektives Content-Management, verbessert
-                die SEO und optimiert das Nutzererlebnis. </p>
-              <p> Giraf bietet maßgeschneiderte CMS-Lösungen zur Verbesserung Ihres Suchmaschinenrankings
-                und zur Förderung Ihres Erfolgs.</p>
+             <p> Ein Content-Management-System (CMS) unterstützt effizientes Content-Management, verbessert SEO und optimiert die Benutzererfahrung. 
+
+             </p>
+             <p> Giraf bietet maßgeschneiderte CMS-Lösungen zur Verbesserung Ihres Suchmaschinenrankings und zur Steigerung Ihres Erfolgs. </p>
             </div>
 
 
@@ -359,9 +360,9 @@
         <!-- WEB-APP-DEVELOPMENT -->
         <div class="col-xl-4" data-aos="fade-right" data-aos-duration="2000">
           <div class="individualy-box">
-            <h4> Herausstechen statt untergehen: </h4>
-            <p> Inmitten mittelmäßiger Designs sorgen wir für reduzierte Entwicklungszeiten und präzise,
-              ressourcenschonende App-Produktionen. </p>
+            <h4> Heben Sie sich ab, statt unterzugehen </h4>
+            <p>  Zwischen mittelmäßigen Designs sorgen wir für verkürzte Entwicklungszeiten sowie eine präzise und ressourceneffiziente App-Produktion.
+               </p>
           </div>
         </div>
         <!-- WEB-APP-DEVELOPMENT -->
@@ -371,11 +372,10 @@
           <div class="individualy-box">
             <h4> Warum Android- und iOS-Entwicklung wichtig ist: </h4>
             <ul>
-              <li> Android besitzt rund 75 % des Smartphone-Marktes. </li>
-              <li> Erfolgreiche Android-Apps erfordern umfassende Kenntnisse und Expertise. </li>
-              <li> Im überfüllten Google Play Store müssen Apps innovativ, robust und einzigartig sein. </li>
-              <li> Für iOS-Apps bietet Giraf native Softwareunterstützung und umfassende Betreuung
-                durch erfahrene Entwickler. </li>
+              <li> Android besitzt etwa 75 % Marktanteil im Smartphone-Markt.  </li>
+              <li> Erfolgreiche Android-Apps erfordern umfangreiches Wissen und Fachkompetenz.   </li> 
+              <li> Im überfüllten Google Play Store müssen Apps innovativ, robust und einzigartig sein.   </li> 
+              <li> Für iOS-Apps bietet Giraf native Softwareunterstützung und umfassenden Support durch erfahrene Entwickler.  </li> 
             </ul>
           </div>
         </div>
@@ -487,7 +487,7 @@
   <!-- ======================
           FOOTER AREA START
        ====================== -->
-  <?php include("footer.php"); ?>
+  <?php include ('footer.php'); ?>
 
   <!-- =====================
           LINES AREA START

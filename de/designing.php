@@ -80,7 +80,7 @@
     </script>
     <!-- CookieConsent -->
 
-  <?php include("gtag_head.php"); ?>
+  <?php include ('gtag_head.php'); ?>
 </head>
 
 <body>
@@ -90,7 +90,7 @@
 
 
 
-  <?php include("header.php"); ?>
+  <?php include ('header.php'); ?>
 
 
   <!-- =====================
@@ -104,7 +104,7 @@
   <section>
     <div class="banner-area">
       <img src="./img/services/Designing-banner.jpg" alt="banner">
-      <h1> Designing </h1>
+      <h1> Designservice in Deutschland </h1>
     </div>
   </section>
   <!-- =====================
@@ -131,10 +131,13 @@
 
           <!-- col-md-8 -->
           <div class="col-xl-8 col-lg-8 col-md-12 service-detailes-brief-scnd">
-            <p> Design ist ein wesentlicher Bestandteil beim Aufbau einer Unternehmensbasis, da es den
-              gesamten Auftritt eines Unternehmens bestimmt. </p>
-            <p> Mit den besten Designservices an Ihrer Seite können Sie Ihr Unternehmen entwickeln und sich
-              von der Masse abheben. </p>
+            <p>  Eine starke Designidentität ist für Unternehmen im digitalen Markt Deutschlands längst keine Option mehr, sondern eine Notwendigkeit. Professionelles Design beeinflusst die Markenwahrnehmung, das Vertrauen der Nutzer, die Conversion-Rate sowie das langfristige Unternehmenswachstum. Ganz gleich, ob Sie ein komplettes Branding-Paket, eine moderne Website oder ein conversionorientiertes UI/UX-System benötigen – die Wahl des richtigen Designservices in Deutschland wirkt sich direkt auf Ihre Unternehmensleistung aus.
+               </p>
+            <p>  Giraf Creatives ist eine Full-Service-Webdesign-Agentur, Grafikdesign-Agentur und Website-Entwicklungsagentur mit Fokus auf moderne digitale Erlebnisse, die Kreativität, Branding, Funktionalität und SEO-Performance vereinen.
+               </p>
+               <p> Wir unterstützen Start-ups, KMUs, E-Commerce-Marken und Unternehmen dabei, visuell ansprechende und leistungsstarke digitale Produkte durch strategisches Webdesign, UI/UX-Design, Branding und Entwicklungsservices zu realisieren.
+
+               </p>
           </div>
           <!--// col-md-8 -->
 
@@ -170,22 +173,29 @@
           <div class="row">
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-              <h4> UI/UX Design </h4>
-              <p> UX-Design (User Experience) konzentriert sich auf die Benutzererfahrung, während UI-Design
-                (User Interface) sich auf das ästhetische Erscheinungsbild eines digitalen Projekts bezieht.
-                Gemeinsam umfasst UI/UX das Planen und Erstellen von Designs, die dem Nutzer ein
-                reibungsloses Erlebnis bieten. </p>
-              <h5 class="mb-2 mt-2"> Unsere Besonderheiten: </h5>
+              <h4> UI/UX-Designservices für eine bessere Nutzererfahrung </h4>
+              <p>  Als professionelle UX-Design-Agentur und User-Experience-Agentur in
+                 Deutschland konzentrieren wir uns auf die Entwicklung intuitiver digitaler Erlebnisse,
+                  die Benutzerfreundlichkeit und Kundeninteraktion verbessern.
+                 </p>
+              <h5 class="mb-2 mt-2"> Unser UI/UX-Designservice umfasst: </h5>
 
               <ul class="services-list-ul">
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> KI-Integration </a> </li>
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Personalisierung </a> </li>
-                <li> <a><i class="fas fa-long-arrow-alt-right"></i> Erweiterte 3D-Elemente </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Mobile-optimiertes Design </a> </li>
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Plattformübergreifendes Design </a> </li>
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Performantes Design </a> </li>
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Benutzeroberflächendesign </a> </li>
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Optimierung der User Journey  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Wireframing und Prototyping  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Mobile-First-UI-Systeme  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> SaaS-Dashboard-Design  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> E-Commerce-UX-Optimierung  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Conversionorientierte Layouts  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Barrierefreie Designsysteme  </a> </li> 
               </ul>
+              <p> Effektive UI-Designs sind nicht nur optisch ansprechend. Sie reduzieren Reibungspunkte,
+               verbessern die Benutzerfreundlichkeit und helfen Unternehmen, messbares Wachstum zu erzielen. 
+
+            </p>
             </div>
+ 
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
               <img src="./img/services/designing/UI-UX-Design.jpg" alt="UI-UX-Design">
@@ -208,19 +218,25 @@
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-              <h4> Webdesign</h4>
-              <p> Ein gutes Webdesign hinterlässt einen bleibenden Eindruck beim Nutzer. Strategie, Planung,
-                Strukturierung von Informationen und visuelle Gestaltung bestimmen die Qualität einer Website. </p>
-              <p> Giraf bietet Ihnen erstklassige Webdesigns, die Sie von Ihren Mitbewerbern abheben lassen. </p>
-              <h5 class="mb-2 mt-2"> Besondere Leistungen im Webdesign: </h5>
+              <h4> Professionelle Webdesign-Services in Deutschland </h4>
+              <p>  Eine professionelle Website ist oft der erste Kontaktpunkt zwischen Kunden und Ihrer Marke.
+                 Schlechte Layouts, langsame Ladezeiten, veraltete Designs und unübersichtliche Navigation mindern
+                  sofort das Vertrauen. Unsere Webdesign-Agentur erstellt responsive, SEO-orientierte und 
+                  conversionstarke Websites für moderne Unternehmen.
+                 </p>
+              <p>  Als eines der wachsenden Webdesign-Unternehmen in Deutschland kombinieren wir Strategie, Branding,
+                 Technologie und Nutzerpsychologie, um leistungsstarke digitale Plattformen zu entwickeln.
+                 </p>
+              <h5 class="mb-2 mt-2"> Unser Team ist spezialisiert auf: </h5>
               <ul class="services-list-ul">
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> CMS und nahtlose Integration </a> </li>
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> SEO-optimiertes Design </a> </li>
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> API-Integration zur Benutzerfreundlichkeit </a> </li>
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Landingpage-Design </a> </li>
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Performance-optimierte Designs </a> </li>
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Browserkompatible Designs </a> </li>
-                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Immersive Interaktionen </a> </li>
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Individuelles Webdesign  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Responsives Webdesign  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Erstellung von Unternehmenswebsites  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> E-Commerce-Websites  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Landingpage-Optimierung  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Conversionorientierte UI-Layouts  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> SEO-Optimierung der Webseitenstruktur  </a> </li> 
+                <li> <a> <i class="fas fa-long-arrow-alt-right"></i> Markenorientierte Marketing-Websites  </a> </li> 
               </ul>
             </div>
 
@@ -238,21 +254,30 @@
           <div class="row">
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
-              <h4> Grafikdesign </h4>
-              <p> Grafikdesign schafft einen bleibenden Eindruck durch hochwertige Grafiken und Bilder, die die
-                Markenidentität effektiv kommunizieren.
+              <h4> Grafikdesign-Services in Deutschland </h4>
+
+              <h5> Kreatives Grafikdesign zur Stärkung der Markenidentität </h5>
+              <p> Eine starke visuelle Identität schafft Wiedererkennung, Vertrauen und emotionale Bindung. 
+                Unser professioneller Grafikdesign-Service unterstützt Unternehmen dabei, klar und konsistent
+                 über digitale und gedruckte Plattformen hinweg zu kommunizieren.
 
               </p>
-              <p> Unsere talentierten Grafikdesigner sind bestrebt, Ihnen den besten Service zu bieten. </p>
-              <h5 class="mb-2 mt-2"> Grafikdesign-Services: </h5>
+              <p> Als kreative Branding- und Webdesign-Agentur entwickeln wir visuelle Inhalte, die zu Ihren Unternehmenszielen und den Erwartungen Ihrer Zielgruppe passen.</p>
+              <h5 class="mb-2 mt-2"> Grafikdesign-Services:
+               </h5>
               <ul class="services-list-ul">
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Logo-Designs </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Bannerwerbung </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Merchandise-Designs </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Broschüren und Flyer </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Infografiken </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Katalogdesigns </a> </li>
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Logodesign  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Bannerwerbung  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Social-Media-Grafiken  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Merchandise-Design  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Broschüren und Flyer  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Infografiken  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Katalogdesigns  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Verpackungskonzepte  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Präsentationsdesign  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Corporate-Branding-Materialien  </a> </li> 
               </ul>
+              <p> Unser Team liefert strategische visuelle Kommunikation für Unternehmen, die hochwertige Webdesign- und Branding-Lösungen suchen.</p>
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
@@ -276,23 +301,65 @@
 
             <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
               <h4> Markenidentität </h4>
-              <p> Die Markenidentität umfasst die konkreten und abstrakten Elemente eines
-                Unternehmensproduktes. </p>
-              <p> Giraf formt Ihre Marke so, dass sie einzigartig und herausragend ist. </p>
-              <h5 class="mb-2 mt-2"> Services rund um Markenidentität:</h5>
+             <p> Starkes Branding hebt Unternehmen in wettbewerbsintensiven Märkten hervor.
+               Unser Ansatz als Webdesign- und Branding-Agentur kombiniert visuelle Identität,
+                Markenbotschaften und digitale Erlebnisse zu einem einheitlichen Gesamtsystem. 
+
+             </p>
+              <h5 class="mb-2 mt-2">  Wir unterstützen Unternehmen bei der Entwicklung von:  </h5>
               <ul class="services-list-ul">
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Logo-Design </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Markenrichtlinien </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Storytelling-basiertes Branding </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Positionierung </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Buchbranding </a> </li>
-                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Design von Büroartikeln für verschiedene Medien </a> </li>
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Einzigartigen Markenidentitäten  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Markenstrategiesystemen  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Visuellen Kommunikationskonzepten  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Storytelling-orientiertem Branding  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Markenrichtlinien  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Typografiesystemen  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Marketingorientierten Markenvisuals  </a> </li> 
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Corporate-Identity-Elementen  </a> </li> 
               </ul>
+              <p> Durch die Verbindung von Branding mit professionellem Marketing-Webdesign gewährleisten wir Konsistenz über alle digitalen Berührungspunkte hinweg. </p>
             </div>
 
           </div>
         </div>
         <!-- Branding -->
+
+        <!-- Warum Giraf Creatives wählen? -->
+        <div class="col-xl-12 col-lg-12 col-md-12 services-list designing-brdr" data-aos="fade-right" data-aos-duration="2000">
+          <div class="row">
+
+            <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
+              <h4>  Warum Giraf Creatives wählen?
+               </h4>
+               <h5> Eine ergebnisorientierte Webdesign-Agentur in Deutschland </h5> 
+             <p> Giraf Creatives kombiniert Kreativität, Strategie, Branding, SEO und Entwicklungskompetenz, um umfassende digitale Lösungen für Unternehmen bereitzustellen. </p> 
+              
+              <ul class="services-list-ul">
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Erfahrene Webdesigner   </a> </li>  
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> SEO-orientierter Entwicklungsprozess   </a> </li>  
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Conversionorientierte Designsysteme   </a> </li>  
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Moderne UI/UX-Strategien   </a> </li>  
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Skalierbare WordPress-Lösungen   </a> </li>  
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Expertise in Branding und Marketing   </a> </li>  
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Schneller und zuverlässiger Kundensupport   </a> </li>  
+                <li><a> <i class="fas fa-long-arrow-alt-right"></i> Performance-optimierte Websites   </a> </li>  
+              </ul>
+              <p> Ganz gleich, ob Sie eine moderne Unternehmenswebsite, eine skalierbare E-Commerce-Plattform oder
+                 eine vollständige digitale Marken-Transformation benötigen – unser Team bietet professionelle Designservices in Deutschland, 
+                 die auf langfristiges Wachstum ausgelegt sind.
+                 </p>
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-12 services-list-box serv-detail-space">
+              <img src="./img/services/designing/graphic-design.jpg" alt="graphic design">
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <!-- Warum Giraf Creatives wählen? -->
       </div>
     </div>
   </section>
@@ -442,7 +509,7 @@
   <!-- ======================
           FOOTER AREA START
        ====================== -->
-  <?php include("footer.php"); ?>
+  <?php include ('footer.php'); ?>
 
   <!-- =====================
           LINES AREA START

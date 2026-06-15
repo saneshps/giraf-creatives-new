@@ -3403,6 +3403,7 @@ h2 {
 }
 .services-list-area .services-list .services-list-box .services-list-ul {
   padding: 0 0 0 0;
+  margin: 10px 0;
 }
 .services-list-area .services-list .services-list-box .services-list-ul li {
   list-style: none;
@@ -3554,6 +3555,9 @@ h2 {
 }
 .services-list-area.serv-detail .services-list .serv-detail-space h4 {
   color: #F9B217;
+  margin: 0 0 10px 0;
+}
+.services-list-area.serv-detail .services-list .serv-detail-space h5 {
   margin: 0 0 10px 0;
 }
 .services-list-area.serv-detail .services-list.serv-first {
@@ -3757,7 +3761,6 @@ h2 {
 
 .service-anim .box-commn-anm {
   margin: 0 0 30px 0;
-  min-height: 450px;
   border: 1px solid #ccc;
   border-radius: 20px;
   padding: 40px 30px;
@@ -3766,11 +3769,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
-@media (max-width: 1599px) {
-  .service-anim .box-commn-anm {
-    min-height: 400px;
-  }
 }
 @media (max-width: 1199px) {
   .service-anim .box-commn-anm {
@@ -4137,6 +4135,7 @@ h2 {
   color: #000;
   font-size: 16px;
   font-weight: 300;
+  margin-bottom: 10px;
 }
 .service-detailes-brief-area .main-box .service-detailes-brief-scnd ul {
   padding: 10px 0 10px 30px;

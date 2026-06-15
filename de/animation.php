@@ -104,7 +104,7 @@
   <section>
     <div class="banner-area">
       <img src="./img/services/Animation-banner.jpg" alt="banner">
-      <h1> Animation </h1>
+      <h1> Animationsagentur in Deutschland </h1>
     </div>
   </section>
   <!-- =====================
@@ -124,17 +124,24 @@
           <!-- col-md-4 -->
           <div class="col-xl-4 col-lg-4 col-md-12 service-detailes-brief-first">
             <h6> Animation </h6>
-            <h4> DU TRÄUMST ES, WIR VERWIRKLICHEN ES </h4>
+            <h4> SIE TRÄUMEN ES – WIR MACHEN ES ZUR REALITÄT </h4>
           </div>
           <!--// col-md-4 -->
 
 
           <!-- col-md-8 -->
           <div class="col-xl-8 col-lg-8 col-md-12 service-detailes-brief-scnd">
-            <p> Giraf ist ein Full-Service-Anbieter für Videoanimation und bietet einen ausgelagerten Rahmen,
-              der sich an jedes Budget anpasst und Unternehmen dabei unterstützt, ihre Inhalte zu
-              differenzieren und ihre Social-Media- und Marketingstrategien zu verbessern.
-            </p>
+           <p> Giraf ist ein Full-Service-Anbieter für Videoanimationen und eine Animationsagentur in Deutschland,
+             die flexible Outsourcing-Lösungen für jedes Budget bietet. Wir helfen Unternehmen dabei, 
+             ihre Inhalte hervorzuheben und ihre Social-Media- sowie Marketingstrategien zu verbessern.
+
+           </p>
+           <p> Von handgezeichneten bewegten Bildern bis hin zu digitalen Animationen per Mausklick
+             – die Animationstechnologie hat sich rasant weiterentwickelt. Neue Technologien für
+              fesselnde und interaktive Animationen helfen Unternehmen dabei,
+               ihre Geschäftsideen auf innovative Weise zu präsentieren.
+
+           </p>
 
 
           </div>
@@ -179,13 +186,13 @@
                 Technologien zur Erstellung fesselnder und ansprechender animierter Inhalte helfen
                 Unternehmen dabei, ihre Geschäftsideale auf innovative Weise zu vermitteln.
               </p>
-              <h5 class="witness"> Entdecken Sie unsere Animationsdienstleistungen: </h5>
+              <h5 class="witness">  Entdecken Sie unsere Animationsservices: </h5>
               <ul>
-                <li> 3D-Animationsdienste </li>
-                <li> Modellanimation </li>
-                <li> Zeichentrickanimation </li>
-                <li> Stop-Motion-Animation </li>
-                <li> Scherenschnittanimation </li>
+                <li> 3D-Animationsservices  </li> 
+                <li> Modellanimationen  </li> 
+                <li> Cartoon-Animationen  </li> 
+                <li> Stop-Motion-Animationen  </li> 
+                <li> Papercut-Animationen  </li> 
               </ul>
 
             </div>
@@ -196,15 +203,17 @@
           <div class="col-xl-5 col-lg-5 col-md-12">
             <div class="col-md-12 service-detailes-brief-scnd flex-column align-items-start">
               <h4 class="magic"> Wie erschaffen wir diese Magie? </h4>
-              <p> Bringen Sie Ihre Vorstellungskraft mit der Innovation von Giraf zum Leben! Wir erstellen
-                animierte Inhalte, die perfekt zu Ihrer Marke passen. Von Motion Graphics bis 3D-Animation —
-                wir setzen neueste Animationstechniken und Tools wie Adobe After Effects, Flash, Photoshop
-                und Adobe Animate ein, kombiniert mit Methoden wie 3D-Visualisierung, Modellanimation,
-                CGI, Zeichentrickanimation, Stop-Motion-Animation und Scherenschnittanimation.
+           <p> Bringen Sie Ihre Vorstellungen mit der Innovation von Giraf zum Leben! Wir erstellen animierte Inhalte,
+             die perfekt auf Ihre Marke abgestimmt sind. Von Motion Graphics bis hin zu 3D-Animationen nutzen wir
+              modernste Animationstechniken und Tools wie Adobe After Effects, Flash, Photoshop und Adobe 
+              Animate – kombiniert mit Methoden wie 3D-Visualisierung, Modellanimation, CGI,
+               handgezeichneter Animation, Stop-Motion und Silhouettenanimation.
 
-              </p>
-              <p> Giraf garantiert exzellente Animationen, die Ihren Erwartungen entsprechen und Ihr Budget
-                berücksichtigen. </p>
+           </p>
+           <p> Als 3D-Animationsstudio und Motion-Graphics-Design-Agentur in Deutschland garantiert Giraf 
+            hochwertige Animationen, die Ihre Erwartungen erfüllen und gleichzeitig Ihr Budget berücksichtigen.
+
+           </p>
 
             </div>
           </div>
@@ -233,42 +242,33 @@
             <div class="row box-commn">
 
               <div class="col-xl-12 phase-m-app-title">
-                <h4> Animation für verschiedene Branchen
+                <h4> Animationen für verschiedene Branchen
                 </h4>
-                <p> Animation verbindet Storytelling mit eindrucksvollen visuellen Effekten und übersetzt komplexe
-                  Informationen in verständliche und unterhaltsame Inhalte.
-
-                </p>
+                <p> Animation verbindet Storytelling mit beeindruckenden visuellen Effekten und verwandelt 
+                  komplexe Informationen in verständliche und unterhaltsame Inhalte.  </p>
               </div>
 
               <div class="col-xl-6 col-lg-12 col-md-12">
                 <div class="box-commn-anm">
                   <h5 class="text-left"> Unterhaltung: </h5>
-                  <p class="text-left"> Animation ist das Herz der Unterhaltungsbranche — ob Filme,
-                    Kurzfilme, Webserien oder Musikvideos. Lebendige Charaktere und dynamische
-                    Umgebungen schaffen beeindruckende virtuelle Erlebnisse.
-
-
-                  </p>
+                  <p class="text-left">  Animation steht im Mittelpunkt der Unterhaltungsbranche – ob Filme, Kurzfilme,
+                     Webserien oder Musikvideos. Lebendige Charaktere und dynamische
+                      Umgebungen schaffen beeindruckende virtuelle Erlebnisse.
+                     </p>
                 </div>
               </div>
 
               <div class="col-xl-6 col-lg-12 col-md-12">
                 <div class="box-commn-anm">
                   <h5 class="text-left"> Gesundheitswesen: </h5>
-                  <p class="text-left"> Animierte Videos vereinfachen komplexe Konzepte, demonstrieren
-                    Verfahren und unterstützen das pharmazeutische Marketing effektiv.
-
-
-                  </p>
+                  <p class="text-left">  Animierte Videos vereinfachen komplexe Inhalte, demonstrieren Prozesse und unterstützen Pharma-Marketing wirkungsvoll. </p>
                 </div>
               </div>
 
               <div class="col-xl-6 col-lg-12 col-md-12">
                 <div class="box-commn-anm">
                   <h5 class="text-left"> Gaming: </h5>
-                  <p class="text-left"> Realistische Animationen erwecken Spielfiguren und Umgebungen zum Leben
-                    und bieten Nutzern ein unvergleichliches Spielerlebnis.
+                  <p class="text-left"> Realistische Animationen erwecken Spielfiguren und Spielwelten zum Leben und bieten Nutzern ein unvergleichliches Gaming-Erlebnis.
                   </p>
                 </div>
               </div>
@@ -278,10 +278,10 @@
               <div class="col-xl-6 col-lg-12 col-md-12">
                 <div class="box-commn-anm">
                   <h5 class="text-left"> Bildung: </h5>
-                  <p class="text-left"> Animierte Lerninhalte helfen, komplexe Konzepte anschaulich zu erklären und
-                    das Interesse der Schüler aufrechtzuerhalten.
-
-                  </p>
+                  <p class="text-left">  Animierte Lerninhalte helfen dabei, komplexe Themen verständlich zu erklären und das Interesse der Lernenden aufrechtzuerhalten. </p>
+                  <p class="text-left"> Kreative Wege sind herausfordernd – aber wie der Joker sagte: „Why so serious?“
+Mit kreativer Leidenschaft und einem engagierten Team wie Giraf an Ihrer Seite ist Erfolg garantiert.
+ </p>
 
 
                 </div>
@@ -298,30 +298,31 @@
                 <p> Mit kreativer Verrücktheit und einem leidenschaftlichen Team wie Giraf an Ihrer Seite ist Erfolg
                   garantiert. </p>
 
-                <h5 class="mt-2 mb-2"> Unsere Animationsdienstleistungen umfassen: </h5>
+                <h5 class="mt-2 mb-2"> Unsere Animationsservices umfassen: </h5>
                 <ul>
-                  <li> Erklärvideos </li>
-                  <li> App-Demos </li>
-                  <li> Live-Action-Animationen </li>
-                  <li> Schulungs- und Lehrvideos </li>
-                  <li> Unternehmensanimationen </li>
-                  <li> Software-Walkthroughs </li>
+                  <li> Erstellung von Erklärvideos  </li> 
+                  <li> App-Demos  </li> 
+                  <li> Live-Action-Animationen  </li> 
+                  <li> Schulungs- und Anleitungsvideos  </li> 
+                  <li> Unternehmensanimationen  </li> 
+                  <li> Software-Walkthroughs  </li> 
                 </ul>
 
               </div>
             </div>
             <div class="col-xl-6">
               <div class="animation-box-secnd pdng brdr">
-                <h4> Video-Management </h4>
-                <p> Als führende Animationsproduktionsfirma in Indien steuern wir den gesamten Prozess mit
-                  Phasenabnahmen, sodass Sie jederzeit Kontrolle über Ihr Projekt behalten. </p>
+                <h4> Videomanagement </h4>
+                <p>  Als führendes Animationsproduktionsunternehmen in Indien mit professioneller
+                   Videoproduktion betreuen wir den gesamten Produktionsprozess inklusive Freigabephasen,
+                    damit Sie jederzeit die volle Kontrolle über Ihr Projekt behalten.
+                   </p>
 
                 <h4> Erweitern Sie Ihre Reichweite </h4>
-                <p> Animationsinhalte können Ihre Marke nachhaltig stärken und neue Zielgruppen erreichen. </p>
+                <p>  Animierte Inhalte können Ihre Marke nachhaltig stärken und neue Zielgruppen erreichen.  </p>
 
-                <h4> Lassen Sie uns gemeinsam durchstarten! </h4>
-                <p> Das Giraf-Team möchte Ihre Kreativität entfachen und Ihre Visionen Wirklichkeit werden
-                  lassen. Kontaktieren Sie uns — wir kümmern uns um den Rest!
+                <h4> Lassen Sie uns gemeinsam starten! </h4>
+                <p>  Das Team von Giraf möchte Ihre Kreativität entfachen und Ihre Visionen Realität werden lassen. Kontaktieren Sie uns – wir kümmern uns um den Rest!
 
                 </p>
               </div>
